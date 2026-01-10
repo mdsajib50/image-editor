@@ -19,6 +19,8 @@ main{
 main section{
     max-width: 100%;
     padding: var(--padding-2xl);
+    display: flex;
+    gap: var(--gutter-lg);
 }
 
 .btn{
@@ -52,6 +54,9 @@ main section .left{
 
 main section .right{
     width: 30%;
+    background-color: var(--bg-secondary-color);
+    padding: var(--padding-lg);
+    border-radius: var(--border-radius-lg);
 }
 main section .top{
     display: flex;
@@ -84,4 +89,45 @@ main section .bottom .placeholder i{
 
 main section .bottom .placeholder p{
     font-size: var(--font-lg);
+}
+
+main section .right{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gutter-md);
+}
+
+main section .right .filter{
+    width: 100%;
+}
+main section .right .filter input{
+    width: 100%;
+    outline: none;
+    margin-top: var(--margin-sm);
+    appearance: none;
+}
+
+main section .right .filter input::-webkit-slider-runnable-track{
+    background-color: var(--bg-active-color);
+    height: 3px;
+    border-radius: 2px;
+}
+
+main section .right .filter input::-moz-range-track{
+    background-color: var(--bg-active-color);
+    height: 3px;
+}
+
+main section .right .filter input::-webkit-slider-thumb{
+    cursor: pointer;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    margin-top: -8.5px;
+}
+
+.filter-container{
+    margin: 10px 0;
 }
