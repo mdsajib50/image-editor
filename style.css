@@ -131,3 +131,9 @@ main section .right .filter input::-webkit-slider-thumb{
 .filter-container{
     margin: 10px 0;
 }
+
+#image-canvas{
+    background-color: beige;
+    max-width: 100%;
+    max-height: 800px;
+}
