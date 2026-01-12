@@ -133,7 +133,13 @@ main section .right .filter input::-webkit-slider-thumb{
 }
 
 #image-canvas{
-    background-color: beige;
     max-width: 100%;
     max-height: 800px;
+    display: none;
+}
+
+.presets{
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gutter-sm);
 }
